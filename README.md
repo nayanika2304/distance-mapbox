@@ -1,3 +1,10 @@
+# About the Project
+
+This project is build using React and Mapbox GL JS. The goal of the project is to determine the area around a mapbox marker given conditions 
+like mode of travel and duration. 
+
+The project is utilizing the Isochrone API of mapbox - https://docs.mapbox.com/help/tutorials/get-started-isochrone-api/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

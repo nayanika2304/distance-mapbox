@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "mapbox-gl": "^2.5.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
@@ -15,7 +16,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "prettier": "git status --porcelain | awk '{ print $2 }' | grep app/frontend/app/src |  sed 's/^.\\{17\\}//' | xargs prettier --write",
+    "prettier-format": "prettier --write 'src/**/*.js'",
+    "prettier-check": "prettier --check 'src/**/*.js'",
+    "lint": "eslint ./ --fix",
+    "lint-check": "eslint 'src/**/*.js' --ext .js"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +40,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "eslint": "^7.11.0",
+    "prettier": "^2.4.1"
   }
 }
