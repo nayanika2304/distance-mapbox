@@ -1,12 +1,10 @@
 import React, { useRef, useEffect, useState } from 'react';
-import mapboxgl from 'mapbox-gl/dist/mapbox-gl';
-import MapboxWorker from 'mapbox-gl/dist/mapbox-gl-csp-worker';
+import mapboxgl from 'mapbox-gl';
+
 
 const MAPBOX_TOKEN ='pk.eyJ1IjoibmIyMzA0IiwiYSI6ImNrdXppeHp0bjIxc3oyd3A2dDlyM2Y4dWgifQ.AN1SVHhfWVXUYtAhOjCbOg'
 
-mapboxgl.workerClass = MapboxWorker;
 mapboxgl.accessToken = MAPBOX_TOKEN
-
 
 const App = () =>{
   const mapContainer = useRef(null);
