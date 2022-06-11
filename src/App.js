@@ -1,6 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import mapboxgl from '!mapbox-gl'; 
-import {MAPBOX_TOKEN} from 'src/store/config.js'
+
+
+const MAPBOX_TOKEN ='pk.eyJ1IjoibmIyMzA0IiwiYSI6ImNrdXppeHp0bjIxc3oyd3A2dDlyM2Y4dWgifQ.AN1SVHhfWVXUYtAhOjCbOg'
 
 mapboxgl.accessToken = MAPBOX_TOKEN
 
