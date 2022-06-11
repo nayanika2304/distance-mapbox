@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
-import mapboxgl from '!mapbox-gl'; 
+import mapboxgl from 'mapbox-gl';
 
 
 const MAPBOX_TOKEN ='pk.eyJ1IjoibmIyMzA0IiwiYSI6ImNrdXppeHp0bjIxc3oyd3A2dDlyM2Y4dWgifQ.AN1SVHhfWVXUYtAhOjCbOg'
@@ -66,7 +66,7 @@ const App = () =>{
       lat: lat
     };
     marker.setLngLat(lngLat).addTo(map.current);
-  },map);
+  },[map]);
 
   useEffect(() => {
       if (!map.current) return; // wait for map to initialize
